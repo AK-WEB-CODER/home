@@ -34,6 +34,15 @@
      <button class="button button2">View games</button>
     </a>
 <script>
+	operatingSytem()
+
+function operatingSytem() {  
+            var OSName="Unknown OS"; 
+            if (navigator.appVersion.indexOf("Win")!=-1){
+              document.getElementById("OS").style.display = "none";
+            }
+        } 
+
     let video;
 let poseNet;
 let noseX = 0;
